@@ -1,13 +1,8 @@
-#!/usr/bin/env python3
 import random, prompt
+import cli
 
-
-def main():
-    print('Welcome to the Brain Games!')   #Знаю, что такой подход неверен, нужно использовать импорты функции из brain_games и cli
-    usname = prompt.string('May I have your name? ') 
-    #При импорте не получается вернуть значение usname данная функция его не видит из cli,/ 
-    #/пробовал вернуть значение через return, но ничего не вышло
-    print(f'Hello, {usname}!')
+def  main():
+    usname = cli.welcome_user()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     correct = 1
     while True:
@@ -21,7 +16,7 @@ def main():
             print('Correct!')
             correct += 1
         elif number % 2 == 0 and usanswer != 'yes':
-            print(f"Answer '{usanswer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {usname}!")
+            print(f"Answer '{usanswer}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again,{usname}!")
             break
         elif number % 2 != 0 and usanswer == 'no':
             print('Correct!')
@@ -31,5 +26,3 @@ def main():
             break
 
 
-if __name__ == '__main__':
-    main()
