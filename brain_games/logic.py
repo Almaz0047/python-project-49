@@ -12,7 +12,7 @@ def start(game):
         if correct == 3:
             print(f'Congratulations! {usname}')
             break
-        if usanswer == correct_answer:
+        elif usanswer == correct_answer:
             print(f'Correct!')
             correct += 1
         else:
