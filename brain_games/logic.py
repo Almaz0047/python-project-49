@@ -1,4 +1,5 @@
-import cli, prompt
+import cli
+import prompt
 
 
 def start(game):
@@ -13,9 +14,10 @@ def start(game):
             print(f'Congratulations! {usname}')
             break
         elif usanswer == correct_answer:
-            print(f'Correct!')
+            print('Correct!')
             correct += 1
         else:
             print(f"Answer '{usanswer}' is wrong answer ;(. "
-            f"Correct answer was '{correct_answer}'.\nLet's try again, {usname}!")
+                  f"Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {usname}!")
             break

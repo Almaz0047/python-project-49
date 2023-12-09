@@ -1,7 +1,8 @@
 import random
 
 task = 'Answer "yes" if the number is even, otherwise answer.'
-    
+
+
 def engine():
     number = random.randint(1, 100)
     question = number
@@ -10,5 +11,3 @@ def engine():
     else:
         correct_answer = 'no'
     return correct_answer, question
-
-
