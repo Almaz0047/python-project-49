@@ -1,6 +1,7 @@
 from logic import start
 import games.progression
 
+
 def main():
     start(games.progression)
 
