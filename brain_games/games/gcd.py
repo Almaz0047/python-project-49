@@ -1,8 +1,9 @@
-from  random import randint
+from random import randint
 
 TASK = 'Find the greatest common divisor of given numbers.'
 LOWER_LIMIT = 2
 UPPER_LIMIT = 101
+
 
 def engine():
     num_one = randint(LOWER_LIMIT, UPPER_LIMIT)

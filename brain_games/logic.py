@@ -1,9 +1,9 @@
-import cli
+import brain_games.cli
 import prompt
 
 
 def start(game):
-    usname = cli.welcome_user()
+    usname = brain_games.cli.welcome_user()
     correct = 1
     print(game.TASK)
     while True:
@@ -17,7 +17,7 @@ def start(game):
             print('Correct!')
             correct += 1
         else:
-            print(f"Answer '{usanswer}' is wrong answer ;(. "
+            print(f"'{usanswer}' is wrong answer ;(. "
                   f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {usname}!")
-            break
+            return

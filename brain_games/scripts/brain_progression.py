@@ -1,9 +1,9 @@
-from logic import start
-import games.progression
+from brain_games.logic import start
+import brain_games.games.progression
 
 
 def main():
-    start(games.progression)
+    start(brain_games.games.progression)
 
 
 if __name__ == '__main__':

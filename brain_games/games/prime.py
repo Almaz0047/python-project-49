@@ -4,6 +4,7 @@ TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 LOWER_LIMIT = 0
 UPPER_LIMIT = 30
 
+
 def engine():
     number = randint(LOWER_LIMIT, UPPER_LIMIT)
     question = number
