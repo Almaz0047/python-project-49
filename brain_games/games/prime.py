@@ -1,10 +1,11 @@
-import random
+from random import randint
 
-task = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-
+TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+LOWER_LIMIT = 0
+UPPER_LIMIT = 30
 
 def engine():
-    number = random.randint(0, 30)
+    number = randint(LOWER_LIMIT, UPPER_LIMIT)
     question = number
     divisor = 2
     while number % divisor != 0:

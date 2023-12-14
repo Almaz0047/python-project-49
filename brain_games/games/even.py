@@ -1,10 +1,12 @@
-import random
+from random import randint
 
-task = 'Answer "yes" if the number is even, otherwise answer.'
+TASK = 'Answer "yes" if the number is even, otherwise answer.'
+LOWER_LIMIT = 1
+UPPER_LIMIT = 100
 
 
 def engine():
-    number = random.randint(1, 100)
+    number = randint(LOWER_LIMIT, UPPER_LIMIT)
     question = number
     if number % 2 == 0:
         correct_answer = 'yes'

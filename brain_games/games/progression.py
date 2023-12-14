@@ -1,14 +1,20 @@
-import random
+from random import randint
 
-task = 'What number is missing in the progression?'
+TASK = 'What number is missing in the progression?'
+LOWER_LIMIT = 1
+UPPER_LIMIT = 20
+MIN_LENGHT = 5
+MAX_LENGHT = 12
+MIN_STEP = 2
+MAX_STEP = 5
 
 
 def engine():
-    start = random.randint(1, 20)
-    step = random.randint(2, 5)
-    length = random.randint(5, 12)
+    start = randint(LOWER_LIMIT, UPPER_LIMIT)
+    step = randint(MIN_STEP, MAX_STEP)
+    length = randint(MIN_LENGHT, MAX_LENGHT)
     progression = get_progression(start, step, length)
-    index_num = random.randint(1, len(progression) - 1)
+    index_num = randint(1, len(progression) - 1)
     correct_answer = str(progression[index_num])
     progression[index_num] = '..'
     question = ' '.join(map(str, progression))

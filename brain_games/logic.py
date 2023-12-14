@@ -5,7 +5,7 @@ import prompt
 def start(game):
     usname = cli.welcome_user()
     correct = 1
-    print(game.task)
+    print(game.TASK)
     while True:
         correct_answer, question = game.engine()
         print(f'Question: {question}')

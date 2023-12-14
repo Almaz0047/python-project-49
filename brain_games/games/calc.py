@@ -1,12 +1,15 @@
 import random
+from random import randint
 
 
-task = 'What is the result of the expression?'
+TASK = 'What is the result of the expression?'
+LOWER_LIMIT = 1
+UPPER_LIMIT = 50
 
 
 def engine():
-    num_one = random.randint(1, 50)
-    num_two = random.randint(1, 50)
+    num_one = randint(LOWER_LIMIT, UPPER_LIMIT)
+    num_two = randint(LOWER_LIMIT, UPPER_LIMIT)
     operator = random.choice(['+', '-', '*'])
     correct_answer = str(calculator(num_one, num_two, operator))
     question = f'{num_one} {operator} {num_two}'
