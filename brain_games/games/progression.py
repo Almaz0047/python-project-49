@@ -9,7 +9,7 @@ MIN_STEP = 2
 MAX_STEP = 5
 
 
-def engine():
+def generate_round():
     start = randint(LOWER_LIMIT, UPPER_LIMIT)
     step = randint(MIN_STEP, MAX_STEP)
     length = randint(MIN_LENGHT, MAX_LENGHT)

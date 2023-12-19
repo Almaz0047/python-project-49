@@ -9,7 +9,7 @@ def start(game):
     index = 0
     print(game.TASK)
     while index < SCORE:
-        correct_answer, question = game.engine()
+        correct_answer, question = game.generate_round()
         print(f'Question: {question}')
         usanswer = prompt.string('Your answer: ')
         if usanswer == correct_answer:

@@ -7,7 +7,7 @@ LOWER_LIMIT = 1
 UPPER_LIMIT = 50
 
 
-def engine():
+def generate_round():
     num_one = randint(LOWER_LIMIT, UPPER_LIMIT)
     num_two = randint(LOWER_LIMIT, UPPER_LIMIT)
     operator = random.choice(['+', '-', '*'])
