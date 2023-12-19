@@ -15,7 +15,7 @@ python3 -m pip install --user git+https://github.com/Almaz0047/python-project-49
 ## Game 3: **Greatest Common Divisor**
 [![asciicast](https://asciinema.org/a/G2wU1N91cUpnSMRCRJ3p9Msj0.svg)](https://asciinema.org/a/G2wU1N91cUpnSMRCRJ3p9Msj0)
 
-## Game 4: **Arithmetic progression**
+## Game 4: **Arithmetic Progression**
 [![asciicast](https://asciinema.org/a/tyabLmQRvts5gPU98bwhL058c.svg)](https://asciinema.org/a/tyabLmQRvts5gPU98bwhL058c)
 
 ## Game 5: **Prime Number**
