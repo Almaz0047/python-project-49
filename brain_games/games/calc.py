@@ -11,16 +11,17 @@ def generate_round():
     num_one = randint(LOWER_LIMIT, UPPER_LIMIT)
     num_two = randint(LOWER_LIMIT, UPPER_LIMIT)
     operator = random.choice(['+', '-', '*'])
-    correct_answer = str(calculator(num_one, num_two, operator))
+    correct_answer = str(calculate(num_one, num_two, operator))
     question = f'{num_one} {operator} {num_two}'
     return correct_answer, question
 
 
-def calculator(num_one, num_two, operator):
-    if operator == '+':
-        result = num_one + num_two
-    elif operator == '-':
-        result = num_one - num_two
-    elif operator == '*':
-        result = num_one * num_two
+def calculate(num_one, num_two, operator):
+    match operator:
+        case '+':
+            result = num_one + num_two
+        case '-':
+            result = num_one - num_two
+        case '*':
+            result = num_one * num_two
     return result
