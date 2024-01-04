@@ -7,12 +7,11 @@ UPPER_LIMIT = 100
 
 def generate_round():
     number = randint(LOWER_LIMIT, UPPER_LIMIT)
-    question = number
     if is_even(number):
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    return correct_answer, question
+    return correct_answer, number
 
 
 def is_even(number):
